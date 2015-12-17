@@ -40,7 +40,7 @@
 		
 		var score = CalculateScore(recipe);
 		
-		if(score > highScore) {
+		if(score > highScore && CalculateProperty('calories', recipe) == 500) {
 			highScore = score;
 			bestRecipe = recipe;
 		}
